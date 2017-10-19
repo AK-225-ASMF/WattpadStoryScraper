@@ -1,9 +1,14 @@
+import sys
 import requests
 from bs4 import BeautifulSoup
 
 def main():
     # Initialize the link to the book
-    bookLink = 'https://www.wattpad.com/1083624-the-shy-girl-has-a-gun-chapter-2'
+    if(len(sys.argv)>1):
+            bookLink = sys.argv[1]#'https://www.wattpad.com/1083624-the-shy-girl-has-a-gun-chapter-2'
+    else:
+        bookLink = 'https://www.wattpad.com/1083624-the-shy-girl-has-a-gun-chapter-2'
+        
     # retrieve the links of all chapters from the TOC
     links = retrieveTOC(bookLink)
     chapNumber = 0
