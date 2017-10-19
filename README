@@ -1,0 +1,31 @@
+Wattpad Story Scraper:
+
+This is some python code that will take a link to a Wattpad story (regardless of the chapter) 
+and copy the entirety of the story into text files.
+-----------------------------
+Way to use:
+input:
+python watScrp.py [url to wattpad story]
+
+output:
+[list links to all of the chapters]
+Chapter_0 writing
+Chapter_1 writing
+...
+
+input:
+dir
+
+output:
+Chapter_0.txt
+Chapter_1.txt
+...
+
+-----------------------------
+
+If no argument is given, the scraper will automatically scrape the wattpad story "the shy girl's got a gun"
+
+-----------------------------
+
+link to "the shy girl's got a gun":
+https://www.wattpad.com/1069480-the-shy-girl-has-a-gun
